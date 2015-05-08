@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
   root 'sample#index'
-  
+
+  resources 'sample', only: [:index] do
+    collection do
+      post :action_1
+    end
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
