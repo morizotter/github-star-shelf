@@ -13,18 +13,21 @@ gem 'jquery-rails'
 
 gem 'kaminari'
 gem 'turbolinks'
+gem 'octokit', '~> 3.0'
 
 gem 'bcrypt', '~> 3.1.7'
-gem "paranoia", "~> 2.0"
+gem 'paranoia', '~> 2.0'
+gem 'arel', '6.0.0'
+
 gem 'sqlite3'
 
 gem 'puma'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
-  gem "bullet"
+  gem 'bullet'
   gem 'pry-rails'
-  gem "better_errors"
+  gem 'better_errors'
   gem 'capistrano-rails'
 end
 
