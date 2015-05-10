@@ -4,6 +4,6 @@ class SampleController < ApplicationController
   end
 
   def action_1
-    render :action => 'index'
+    redirect_to 'index'
   end
 end
