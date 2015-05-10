@@ -2,11 +2,7 @@ class MainCtrl
   constructor: ($http)->
     that = @
 
-    @samples = [
-      { name: 'sample1' }
-      { name: 'sample2' }
-      { name: 'sample3' }
-    ]
+    @samples = []
 
     @get = () ->
       $http.get('/api/list')
