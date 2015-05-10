@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 
+gem "bower-rails", "~> 0.9.2"
+gem 'angular-rails-templates', "~> 0.2.0"
+
 gem 'kaminari'
 gem 'turbolinks'
 gem 'octokit', '~> 3.0'
