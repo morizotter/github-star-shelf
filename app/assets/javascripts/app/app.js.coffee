@@ -1,1 +1,1 @@
-angular.module 'gssApp', []
+angular.module 'gssApp', ['templates']

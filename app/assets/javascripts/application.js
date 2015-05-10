@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require underscore/underscore
 //= require angular/angular
+//= require angular-rails-templates
 //= require_tree .
