@@ -1,6 +1,8 @@
-.container-fluid
-  .row
-    = button_to "Sign in with Github", omniauth_authorize_path(resource_name, 'github'), :class => 'btn btn-default'
+.container{ :style => "margin-top: 30px;" }
+  .jumbotron
+    %h1 Github Star Shelf
+    %p This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+    = button_to "Sign in with Github", omniauth_authorize_path(resource_name, 'github'), :class => 'btn btn-primary'
 
 -# <h2>Sign up</h2>
 -#
