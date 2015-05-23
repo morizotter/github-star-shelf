@@ -1,5 +1,5 @@
 class MainCtrl
-  constructor: ($http)->
+  constructor: ($http, $window)->
     that = @
 
     @samples = []
@@ -10,5 +10,9 @@ class MainCtrl
         that.samples = data
     @get()
 
+    @logout = () ->
+      $http.get('/users/sign_out').success (res)->
+        $window.location.reload();
+
 angular.module 'gssApp'
-.controller 'MainCtrl', ['$http', MainCtrl]
+.controller 'MainCtrl', ['$http', '$window', MainCtrl]

@@ -10,6 +10,7 @@ gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
+gem 'angular_rails_csrf'
 
 gem "bower-rails", "~> 0.9.2"
 gem 'angular-rails-templates', "~> 0.2.0"
