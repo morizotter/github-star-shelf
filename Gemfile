@@ -23,6 +23,7 @@ gem 'paranoia', '~> 2.0'
 gem 'arel', '6.0.0'
 
 gem 'sqlite3'
+gem 'annotate', '~> 2.6.6'
 
 gem 'puma'
 gem 'sdoc', '~> 0.4.0', group: :doc

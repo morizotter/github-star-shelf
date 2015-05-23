@@ -41,6 +41,9 @@ GEM
       railties (>= 3.1)
       sprockets (~> 2)
       tilt
+    annotate (2.6.10)
+      activerecord (>= 3.2, <= 4.3)
+      rake (~> 10.4)
     arel (6.0.0)
     bcrypt (3.1.10)
     better_errors (2.1.1)
@@ -227,6 +230,7 @@ PLATFORMS
 
 DEPENDENCIES
   angular-rails-templates (~> 0.2.0)
+  annotate (~> 2.6.6)
   arel (= 6.0.0)
   bcrypt (~> 3.1.7)
   better_errors
