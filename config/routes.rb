@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'sample#index'
 
   resources 'sample', only: [:index] do
