@@ -28,6 +28,10 @@ gem 'annotate', '~> 2.6.6'
 gem 'puma'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'devise'
+gem 'omniauth-github'
+gem "figaro"
+
 group :development do
   gem 'bullet'
   gem 'pry-rails'
