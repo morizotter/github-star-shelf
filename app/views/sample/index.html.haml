@@ -1,8 +1,5 @@
-- if signed_in?
-  %div{ "ng-app" => "gssApp" }
-    %div{ "ui-view" => "" }
-- else
-  = button_to "Sign in with Github", user_omniauth_authorize_path(:github)
+%div{ "ng-app" => "gssApp" }
+  %div{ "ui-view" => "" }
 
 %br
 %br
