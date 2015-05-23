@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  # devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
   root 'sample#index'
 
   resources 'sample', only: [:index] do
     collection do
-      post :action_1
+      post :binding_pry
     end
   end
 

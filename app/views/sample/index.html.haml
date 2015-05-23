@@ -1,5 +1,7 @@
 %div{ "ng-app" => "gssApp" }
   %div{ "ui-view" => "" }
 
-= button_to "Action1", :action =>'action_1'
+= button_to "binding.pry", :action =>'binding_pry'
+
+= button_to "Sign in with Github", user_omniauth_authorize_path(:github)
 = button_to "Sign out", destroy_user_session_path, :method => :delete
