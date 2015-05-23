@@ -17,6 +17,9 @@
 #  updated_at             :datetime
 #  provider               :string
 #  uid                    :string
+#  name                   :string
+#  image                  :string
+#  nickname               :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

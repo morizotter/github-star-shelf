@@ -17,6 +17,9 @@
 #  updated_at             :datetime
 #  provider               :string
 #  uid                    :string
+#  name                   :string
+#  image                  :string
+#  nickname               :string
 #
 
 class User < ActiveRecord::Base
@@ -30,16 +33,22 @@ class User < ActiveRecord::Base
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.email = auth.info.email
       user.password = Devise.friendly_token[0,20]
-      # user.name = auth.info.name   # assuming the user model has a name
-      # user.image = auth.info.image # assuming the user model has an image
+      user.nickname = auth.info.nickname
+      user.name = auth.info.name
+      user.image = auth.info.image
     end
   end
 
   def self.new_with_session(params, session)
     binding.pry
     super.tap do |user|
-      if data = session["devise.github_data"] && session["devise.github_data"]["extra"]["raw_info"]
-        user.email = data["email"] if user.email.blank?
+      if data = session["devise.github_data"]
+        user.name = session["devise.github_data"]["info"]["name"]
+        user.image = session["devise.github_data"]["info"]["image"]
+        user.nickname = session["devise.github_data"]["info"]["nickname"]
+        if session["devise.github_data"]["extra"]["raw_info"]
+          user.email = data["email"]
+        end
       end
     end
   end
