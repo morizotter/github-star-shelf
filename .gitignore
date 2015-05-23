@@ -33,3 +33,6 @@ config/secrets.yml
 
 # Ignore pow environment settings
 .powenv
+
+# Ignore application configuration
+/config/application.yml
