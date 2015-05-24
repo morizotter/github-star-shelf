@@ -12,11 +12,11 @@
     -# Collect the nav links, forms, and other content for toggling
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       %ul.nav.navbar-nav
-        %li{ "ng-class" => "{active: isActive('settings')}"}
-          %a{"ui-sref" => "settings"} Settings
+        %li{ "ng-class" => "{active: isActive('sub')}"}
+          %a{"ui-sref" => "sub"} Sub
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
-          %a.dopdown-toggle{"ng-href" => "#", :data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}
+          %a.dopdown-toggle{:data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}
             %i.fa.fa-gear
             %span.caret
           %ul.dropdown-menu{:role => "menu"}

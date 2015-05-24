@@ -10,6 +10,11 @@ app.config ['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterP
     templateUrl: "app/main/mainTemplate.html"
     controller: 'MainCtrl'
     controllerAs: 'main'
+  .state 'sub',
+    url: "/sub"
+    templateUrl: "app/sub/subTemplate.html"
+    controller: 'SubCtrl'
+    controllerAs: 'sub'
   .state 'settings',
     url: "/settings"
     templateUrl: "app/settings/setteingsTemplate.html"
