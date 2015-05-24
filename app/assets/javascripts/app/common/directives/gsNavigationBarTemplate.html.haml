@@ -13,10 +13,9 @@
     .collapse.navbar-collapse#bs-example-navbar-collapse-1
       %ul.nav.navbar-nav
         %li{ "ng-class" => "{active: isActive('main')}"}
-          %a{"ng-href" => "#"}
-            Main
-        %li
-          %a{"ng-href" => "#"} Link
+          %a{"ui-sref" => "main"} Main
+        %li{ "ng-class" => "{active: isActive('settings')}"}
+          %a{"ui-sref" => "settings"} Settings
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
           %a.dopdown-toggle{"ng-href" => "#", :data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}

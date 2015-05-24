@@ -1,4 +1,4 @@
-gsNavigationBar = ()->
+gsNavigationBar = ($state)->
   scope:
     state: '='
   restrict: 'E'
@@ -9,4 +9,4 @@ gsNavigationBar = ()->
       scope.state.current.name is name
 
 angular.module('gsApp')
-.directive 'gsNavigationBar', [gsNavigationBar]
+.directive 'gsNavigationBar', ['$state', gsNavigationBar]
