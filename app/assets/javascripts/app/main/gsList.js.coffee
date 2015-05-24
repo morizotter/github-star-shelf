@@ -1,11 +1,11 @@
-list = ()->
+gsList = ()->
   scope:
     samples: '='
   restrict: 'E'
   replace: true
-  templateUrl: "app/main/listTemplate.html"
+  templateUrl: "app/main/gsListTemplate.html"
   link: (scope, element, attrs, ctrl) ->
     console.log "samples: #{scope.samples}"
 
-angular.module('gssApp')
-.directive 'list', [list]
+angular.module('gsApp')
+.directive 'gsList', [gsList]

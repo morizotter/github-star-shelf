@@ -1,0 +1,27 @@
+%nav.navba.navbar-default
+  .container-fluid
+    -# Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle.collapsed{:type => "button", :data => {:toggle => "collapse", :target => "#bs-example-navbar-collapse-1"}}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{"ui-sref" => "main"} GitHub Star Shelf (β)
+
+    -# Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+      %ul.nav.navbar-nav
+        %li{ "ng-class" => "{active: isActive('settings')}"}
+          %a{"ui-sref" => "settings"} Settings
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dopdown-toggle{"ng-href" => "#", :data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}
+            Me
+            %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            %li
+              %a{"ui-sref" => "settings"} Settings
+            %li.divider
+            %li
+              %a{"ng-click" => "logout()", :style => "cursor: pointer;"} Log out
