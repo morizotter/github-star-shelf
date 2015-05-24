@@ -36,6 +36,7 @@ class User < ActiveRecord::Base
       user.nickname = auth.info.nickname
       user.name = auth.info.name
       user.image = auth.info.image
+      user.token = auth.credentials.token
     end
   end
 
@@ -46,6 +47,7 @@ class User < ActiveRecord::Base
         user.name = session["devise.github_data"]["info"]["name"]
         user.image = session["devise.github_data"]["info"]["image"]
         user.nickname = session["devise.github_data"]["info"]["nickname"]
+        user.token = session["devise.github_data"]["credentials"]["token"]
         if session["devise.github_data"]["extra"]["raw_info"]
           user.email = data["email"]
         end
