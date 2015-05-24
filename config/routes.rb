@@ -12,6 +12,11 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
     resources :list, only: [:index]
+    resources :users, only: [] do
+      collection do
+        get :me
+      end
+    end
   end
 
   # Example of regular route:
