@@ -1,5 +1,5 @@
 class MainCtrl
-  constructor: ($http, $window, $state)->
+  constructor: ($http, $window, $state, GITHUB)->
     that = @
 
     @state = $state
@@ -11,4 +11,4 @@ class MainCtrl
     @get()
 
 angular.module 'gsApp'
-.controller 'MainCtrl', ['$http', '$window', '$state', MainCtrl]
+.controller 'MainCtrl', ['$http', '$window', '$state', 'GITHUB', MainCtrl]
