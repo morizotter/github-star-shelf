@@ -1,4 +1,4 @@
-app = angular.module 'gssApp', [
+app = angular.module 'gsApp', [
   'ui.router'
   'templates'
 ]

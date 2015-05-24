@@ -7,5 +7,5 @@ gsList = ()->
   link: (scope, element, attrs, ctrl) ->
     console.log "samples: #{scope.samples}"
 
-angular.module('gssApp')
+angular.module('gsApp')
 .directive 'gsList', [gsList]

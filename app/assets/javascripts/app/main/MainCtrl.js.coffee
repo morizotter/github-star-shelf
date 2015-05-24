@@ -14,5 +14,5 @@ class MainCtrl
       $http.get('/users/sign_out').success (res)->
         $window.location.reload();
 
-angular.module 'gssApp'
+angular.module 'gsApp'
 .controller 'MainCtrl', ['$http', '$window', '$state', MainCtrl]

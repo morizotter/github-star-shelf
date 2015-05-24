@@ -8,5 +8,5 @@ gsNavigationBar = ()->
     scope.isActive = (name) ->
       scope.state.current.name is name
 
-angular.module('gssApp')
+angular.module('gsApp')
 .directive 'gsNavigationBar', [gsNavigationBar]
