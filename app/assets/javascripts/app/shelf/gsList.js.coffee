@@ -3,7 +3,7 @@ gsList = ()->
     samples: '='
   restrict: 'E'
   replace: true
-  templateUrl: "app/main/gsListTemplate.html"
+  templateUrl: "app/shelf/gsListTemplate.html"
   link: (scope, element, attrs, ctrl) ->
     console.log "samples: #{scope.samples}"
 

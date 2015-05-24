@@ -5,11 +5,11 @@ app = angular.module 'gsApp', [
 app.config ['$stateProvider', '$urlRouterProvider', ($stateProvider, $urlRouterProvider) ->
   $urlRouterProvider.otherwise '/'
   $stateProvider
-  .state 'main',
+  .state 'shelf',
     url: "/"
-    templateUrl: "app/main/mainTemplate.html"
-    controller: 'MainCtrl'
-    controllerAs: 'main'
+    templateUrl: "app/shelf/shelfTemplate.html"
+    controller: 'ShelfCtrl'
+    controllerAs: 'shelf'
   .state 'sub',
     url: "/sub"
     templateUrl: "app/sub/subTemplate.html"

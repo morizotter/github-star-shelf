@@ -1,4 +1,4 @@
-class MainCtrl
+class ShelfCtrl
   constructor: ($http, $window, $state, GITHUB)->
     that = @
 
@@ -14,4 +14,4 @@ class MainCtrl
     @get()
 
 angular.module 'gsApp'
-.controller 'MainCtrl', ['$http', '$window', '$state', 'GITHUB', MainCtrl]
+.controller 'ShelfCtrl', ['$http', '$window', '$state', 'GITHUB', ShelfCtrl]
