@@ -1,38 +1,4 @@
-%nav.navba.navbar-default
-  .container-fluid
-    -# Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{:type => "button", :data => {:toggle => "collapse", :target => "#bs-example-navbar-collapse-1"}}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{"ng-href" => "#"} Brand
-
-    -# Collect the nav links, forms, and other content for toggling
-    .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      %ul.nav.navbar-nav
-        %li.active
-          %a{"ng-href" => "#"}
-            Link
-            %span.sr-only (current)
-        %li
-          %a{"ng-href" => "#"} Link
-      %ul.nav.navbar-nav.navbar-right
-        %li.dropdown
-          %a.dopdown-toggle{"ng-href" => "#", :data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}
-            Dropdown
-            %span.caret
-          %ul.dropdown-menu{:role => "menu"}
-            %li
-              %a{"ng-href" => "#"} Action
-            %li
-              %a{"ng-href" => "#"} Another action
-            %li
-              %a{"ng-href" => "#"} Something else here
-            %li.divider
-            %li
-              %a{"ng-href" => "#"} Separated link
+%gs-navigation-bar{:state => "main.state"}
 
 .container
   .row

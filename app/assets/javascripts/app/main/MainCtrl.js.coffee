@@ -1,9 +1,9 @@
 class MainCtrl
-  constructor: ($http, $window)->
+  constructor: ($http, $window, $state)->
     that = @
 
+    @state = $state
     @samples = []
-
     @get = () ->
       $http.get('/api/list')
       .success (data, status, headers, config) ->
@@ -15,4 +15,4 @@ class MainCtrl
         $window.location.reload();
 
 angular.module 'gssApp'
-.controller 'MainCtrl', ['$http', '$window', MainCtrl]
+.controller 'MainCtrl', ['$http', '$window', '$state', MainCtrl]
