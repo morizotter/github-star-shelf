@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources 'sample', only: [:index] do
     collection do
-      post :binding_pry
+      get :binding_pry
     end
   end
 
