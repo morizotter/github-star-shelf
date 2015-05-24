@@ -95,9 +95,6 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    dotenv (2.0.1)
-    dotenv-rails (2.0.1)
-      dotenv (= 2.0.1)
     erubis (2.7.0)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -284,7 +281,6 @@ DEPENDENCIES
   capistrano-rails
   coffee-rails (~> 4.1.0)
   devise
-  dotenv-rails
   figaro
   font-awesome-sass
   haml-rails
