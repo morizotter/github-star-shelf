@@ -26,7 +26,7 @@ Things you may want to cover:
 ## Setup
 
 ```
-$ cp .env.sample .env
+$ cp application.yml.sample application.yml
 $ bundle install
 $ bundle exec rake bower:install
 ```
