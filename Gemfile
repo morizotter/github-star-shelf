@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.4'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.3.0'
 
 gem "bower-rails", "~> 0.9.2"
 gem 'angular-rails-templates', "~> 0.2.0"
