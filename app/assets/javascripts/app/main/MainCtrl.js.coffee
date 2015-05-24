@@ -10,9 +10,5 @@ class MainCtrl
         that.samples = data
     @get()
 
-    @logout = () ->
-      $http.get('/users/sign_out').success (res)->
-        $window.location.reload();
-
 angular.module 'gsApp'
 .controller 'MainCtrl', ['$http', '$window', '$state', MainCtrl]

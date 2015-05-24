@@ -19,7 +19,7 @@
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
           %a.dopdown-toggle{"ng-href" => "#", :data => {:toggle => "dropdown"}, :role => "button", :aria => {:expanded => "false"}}
-            Dropdown
+            Me
             %span.caret
           %ul.dropdown-menu{:role => "menu"}
             %li
@@ -30,4 +30,4 @@
               %a{"ng-href" => "#"} Something else here
             %li.divider
             %li
-              %a{"ng-href" => "#"} Separated link
+              %a{"ng-click" => "logout()", :style => "cursor: pointer;"} Log out

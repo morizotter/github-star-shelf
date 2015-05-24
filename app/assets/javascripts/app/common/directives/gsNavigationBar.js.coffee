@@ -1,4 +1,4 @@
-gsNavigationBar = ($state)->
+gsNavigationBar = ($state, $http, $window)->
   scope:
     state: '='
   restrict: 'E'
@@ -8,5 +8,9 @@ gsNavigationBar = ($state)->
     scope.isActive = (name) ->
       scope.state.current.name is name
 
+    scope.logout = () ->
+      $http.get('/users/sign_out').success (res)->
+        $window.location.reload();
+
 angular.module('gsApp')
-.directive 'gsNavigationBar', ['$state', gsNavigationBar]
+.directive 'gsNavigationBar', ['$state', '$http', '$window', gsNavigationBar]
